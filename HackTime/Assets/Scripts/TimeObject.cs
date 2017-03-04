@@ -3,13 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TimeObject : MonoBehaviour {
-	public bool is_future, visible;
-	public float last_angle;
-	public GameObject player; 
+	//This boolean says if something is in the future or in the present
+	public bool is_future;
 
-	// Use this for initialization
+	//Determines whether the object is currently visible
+	public bool visible;
+
+	public float last_angle;
+	public GameObject player;
+
+    private Vector3 original_scale;
+	// Object starts out visible, but can change depending on its current position
+	// relative to the player
 	void Start () {
 		visible = true;
+        original_scale = transform.localScale;
 		if (is_future) {
 			if ((getRelativeAngle() + 180) % 360 > 180) {
 				transform.localScale *= 0;
@@ -24,7 +32,7 @@ public class TimeObject : MonoBehaviour {
 		last_angle = getRelativeAngle();
 	}
 	
-	// Update is called once per frame
+	// Calculations are made to determine whether to switch visibility
 	void Update () {
 		float new_angle = (getRelativeAngle() + 360) % 360;
 		bool crossed_behind = (90 < new_angle && new_angle < 180 && 270 > last_angle && last_angle >= 180)
@@ -34,14 +42,14 @@ public class TimeObject : MonoBehaviour {
 			transform.localScale *= 0;
 		}
 		else{
-			transform.localScale = new Vector3(1, 1, 1);
+            transform.localScale = original_scale;
 		}
 		last_angle = new_angle;
 	}
 
 	float getRelativeAngle(){
 		Vector3 positionVector = player.transform.position - transform.position;
-		float result = ((player.transform.eulerAngles.y - Mathf.Rad2Deg * Mathf.Atan2 (positionVector.z, positionVector.x)) + 180) % 360;
+		float result = ((player.transform.eulerAngles.y + Mathf.Rad2Deg * Mathf.Atan2 (positionVector.z, positionVector.x)) + 90) % 360;
 		return result;
 	}
 }
