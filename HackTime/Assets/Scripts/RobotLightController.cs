@@ -11,8 +11,6 @@ public class RobotLightController : MonoBehaviour {
 	void Start () {
 		light = GetComponent<Light> ();
 		timeObj = robot.GetComponent<TimeObject>();
-		transform.position = robot.transform.position; 
-		transform.rotation = robot.transform.rotation; 
 	}
 
 	// Update is called once per frame
@@ -22,7 +20,5 @@ public class RobotLightController : MonoBehaviour {
 		} else {
 			light.enabled = true;
 		}
-		transform.position = robot.transform.position; 
-		transform.rotation = robot.transform.rotation;
 	}
 }
