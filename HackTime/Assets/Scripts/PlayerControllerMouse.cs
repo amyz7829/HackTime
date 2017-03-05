@@ -14,13 +14,19 @@ public class PlayerControllerMouse : MonoBehaviour {
     private Vector3 moveDirection = Vector3.zero;
     private float pitch = 0;
 
-    private bool mouseLocked = true;
-    public bool controlEnabled = true;
+    public bool mouseLocked;
+    public bool controlEnabled;
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (mouseLocked)
+        {
+            enableMouseControl();
+        }
+        else
+        {
+            disableMouseControl();
+        }
     }
     void Update()
     {
@@ -56,18 +62,35 @@ public class PlayerControllerMouse : MonoBehaviour {
     }
     void OnGUI()
     {
-        // Toggle cursor on escape keypress
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (mouseLocked)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            mouseLocked = false;
+            // Toggle cursor on escape keypress
+            if (Input.GetKeyUp(KeyCode.Escape))
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                mouseLocked = false;
+            }
+            if (Input.GetMouseButtonDown(0))
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                mouseLocked = true;
+            }
         }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
-            mouseLocked = true;
-        }
+    }
+
+    public void enableMouseControl()
+    {
+        mouseLocked = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    public void disableMouseControl()
+    {
+        mouseLocked = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

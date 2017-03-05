@@ -19,7 +19,6 @@ public class KeyUnlocking : MonoBehaviour {
 
     private void OnTriggerEnter(Collider coll)
     {
-		Debug.Log("collision!");
 		if (coll.CompareTag("Player"))
         {
             //transform.localScale *= 0;

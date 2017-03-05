@@ -14,8 +14,10 @@ public class startGame : MonoBehaviour {
 	PlayerControllerMouse controller; 
 	// Use this for initialization
 	void Start () {
+		Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 		controller = player.GetComponent<PlayerControllerMouse> ();
-		controller.controlEnabled = false;
+        controller.disableMouseControl();
 
 		Button play = playButton.GetComponent<Button> ();
 		play.onClick.AddListener (Play);
@@ -26,7 +28,7 @@ public class startGame : MonoBehaviour {
 	
 	void Play(){
 		startScreen.SetActive (false);
-		controller.controlEnabled = true;
+        controller.enableMouseControl();
 	}
 
 	void Quit(){
@@ -36,7 +38,7 @@ public class startGame : MonoBehaviour {
 	void Update(){
 		if (Input.GetKey (KeyCode.Space)) {
 			startScreen.SetActive (false);
-			controller.controlEnabled = true;
-		}
+            controller.enableMouseControl();
+        }
 	}
 }

@@ -17,6 +17,7 @@ public class DoorLevel_1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//If you're close to the door and the barrier is not there, then continue to level 2
 		if (Vector3.Distance (player.transform.position, transform.position) < distance
 			&& barrier.transform.localScale == Vector3.zero) {
 			continueScreen.SetActive (true);

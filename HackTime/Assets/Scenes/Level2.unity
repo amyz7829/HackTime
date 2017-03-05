@@ -349,6 +349,11 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1392533682}
+    - target: {fileID: 114348219197586686, guid: acc25d000b9c43246b09c7dd977e5190,
+        type: 2}
+      propertyPath: is_future
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acc25d000b9c43246b09c7dd977e5190, type: 2}
   m_IsPrefabParent: 0
@@ -1844,6 +1849,11 @@ Prefab:
       propertyPath: m_Name
       value: Guard (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114407470188427658, guid: b2c60738fc4051b4fad62d750ae82235,
+        type: 2}
+      propertyPath: is_future
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2c60738fc4051b4fad62d750ae82235, type: 2}
   m_IsPrefabParent: 0
@@ -2019,7 +2029,7 @@ Prefab:
     - target: {fileID: 114407470188427658, guid: b2c60738fc4051b4fad62d750ae82235,
         type: 2}
       propertyPath: is_future
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1323673715130254, guid: b2c60738fc4051b4fad62d750ae82235, type: 2}
       propertyPath: m_IsActive
@@ -2506,6 +2516,11 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1392533682}
+    - target: {fileID: 114348219197586686, guid: acc25d000b9c43246b09c7dd977e5190,
+        type: 2}
+      propertyPath: is_future
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acc25d000b9c43246b09c7dd977e5190, type: 2}
   m_IsPrefabParent: 0
@@ -3272,7 +3287,7 @@ Prefab:
     - target: {fileID: 114407470188427658, guid: b2c60738fc4051b4fad62d750ae82235,
         type: 2}
       propertyPath: is_future
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1323673715130254, guid: b2c60738fc4051b4fad62d750ae82235, type: 2}
       propertyPath: m_IsActive
@@ -3956,6 +3971,11 @@ Prefab:
         type: 2}
       propertyPath: m_BackGroundColor.b
       value: 0.102941155
+      objectReference: {fileID: 0}
+    - target: {fileID: 114592261974147812, guid: 7435ce67c3fb6f44d91237de2f27afe4,
+        type: 2}
+      propertyPath: mouseLocked
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7435ce67c3fb6f44d91237de2f27afe4, type: 2}
@@ -5931,7 +5951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1273056861
 Transform:
   m_ObjectHideFlags: 0
@@ -7625,7 +7645,7 @@ Prefab:
     - target: {fileID: 114407470188427658, guid: b2c60738fc4051b4fad62d750ae82235,
         type: 2}
       propertyPath: is_future
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1323673715130254, guid: b2c60738fc4051b4fad62d750ae82235, type: 2}
       propertyPath: m_IsActive
@@ -7760,6 +7780,11 @@ Prefab:
         type: 2}
       propertyPath: end_position.x
       value: -35
+      objectReference: {fileID: 0}
+    - target: {fileID: 114348219197586686, guid: acc25d000b9c43246b09c7dd977e5190,
+        type: 2}
+      propertyPath: is_future
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acc25d000b9c43246b09c7dd977e5190, type: 2}
@@ -8751,6 +8776,11 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1392533682}
+    - target: {fileID: 114348219197586686, guid: acc25d000b9c43246b09c7dd977e5190,
+        type: 2}
+      propertyPath: is_future
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acc25d000b9c43246b09c7dd977e5190, type: 2}
   m_IsPrefabParent: 0
@@ -9111,6 +9141,11 @@ Prefab:
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1392533682}
+    - target: {fileID: 114348219197586686, guid: acc25d000b9c43246b09c7dd977e5190,
+        type: 2}
+      propertyPath: is_future
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acc25d000b9c43246b09c7dd977e5190, type: 2}
   m_IsPrefabParent: 0
@@ -9828,7 +9863,7 @@ Prefab:
     - target: {fileID: 114407470188427658, guid: b2c60738fc4051b4fad62d750ae82235,
         type: 2}
       propertyPath: is_future
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1323673715130254, guid: b2c60738fc4051b4fad62d750ae82235, type: 2}
       propertyPath: m_IsActive

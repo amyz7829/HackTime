@@ -15,6 +15,8 @@ public class CollectionLight : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//If the corresponding collector sphere has been collected, then change the color 
+		//on the door
 		if (script.hasBeenCollected) {
 			old_light.enabled = false;
 			GetComponent<Renderer>().material = new_color;

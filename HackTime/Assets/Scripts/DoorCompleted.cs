@@ -31,14 +31,13 @@ public class DoorCompleted : MonoBehaviour {
 				}
 			}
 			levelCompleted = true;
+
+			//Check if all of the collector spheres have been collected
 			for (int i = 0; i < collectorSpheres.Length; i++) {
 				if (!collectorSpheres [i].GetComponent<CollectorSphere> ().hasBeenCollected) {
 					levelCompleted = false;
 				}
 			}
-		}
-		if(Input.GetKey(KeyCode.Return)){
-			SceneManager.LoadScene ("Jumpy_level");
 		}
 	}
 }

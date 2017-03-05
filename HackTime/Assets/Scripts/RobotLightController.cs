@@ -13,7 +13,7 @@ public class RobotLightController : MonoBehaviour {
 		timeObj = robot.GetComponentInParent<TimeObject>();
 	}
 
-	// Update is called once per frame
+	//If the robot is currently visible, then the light is on. Otherwise it's not
 	void LateUpdate () {
 		if (!timeObj.visible) {
 			light.enabled = false;

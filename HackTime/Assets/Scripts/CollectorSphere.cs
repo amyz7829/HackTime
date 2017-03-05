@@ -8,7 +8,8 @@ public class CollectorSphere : MonoBehaviour {
 	void Start () {
 		hasBeenCollected = false;
 	}
-	
+
+	//If it is touched by the player,  then make it disappear
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("Player")) {
 			hasBeenCollected = true;

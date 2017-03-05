@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\CollectorSphere.cs" />
      <Compile Include="Assets\Scripts\DoorCompleted.cs" />
      <Compile Include="Assets\Scripts\DoorLevel_1.cs" />
+     <Compile Include="Assets\Scripts\GameWin.cs" />
      <Compile Include="Assets\Scripts\KeyUnlocking.cs" />
      <Compile Include="Assets\Scripts\PatrolRobotMovement.cs" />
      <Compile Include="Assets\Scripts\PatrollingRobot.cs" />
