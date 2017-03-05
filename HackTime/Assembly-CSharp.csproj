@@ -46,15 +46,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Outline.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\CollectionLight.cs" />
      <Compile Include="Assets\Scripts\CollectorSphere.cs" />
+     <Compile Include="Assets\Scripts\DoorCompleted.cs" />
+     <Compile Include="Assets\Scripts\DoorLevel_1.cs" />
      <Compile Include="Assets\Scripts\KeyUnlocking.cs" />
+     <Compile Include="Assets\Scripts\PatrolRobotMovement.cs" />
      <Compile Include="Assets\Scripts\PatrollingRobot.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerControllerKey.cs" />
+     <Compile Include="Assets\Scripts\PlayerControllerMouse.cs" />
      <Compile Include="Assets\Scripts\RobotLightController.cs" />
      <Compile Include="Assets\Scripts\SpinningRobot.cs" />
      <Compile Include="Assets\Scripts\TimeObject.cs" />
+     <Compile Include="Assets\Scripts\TimeObjectPair.cs" />
+     <Compile Include="Assets\Scripts\startGame.cs" />
      <None Include="Assets\Models\Key\readME keys.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

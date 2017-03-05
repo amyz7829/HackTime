@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyUnlocking : MonoBehaviour {
+    public GameObject key;
     public GameObject door;
+	public GameObject player;
 
     // Use this for initialization
     void Start () {
@@ -15,9 +17,14 @@ public class KeyUnlocking : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider coll)
     {
-        transform.localScale *= 0;
-        door.transform.localScale *= 0;
+		Debug.Log("collision!");
+		if (coll.CompareTag("Player"))
+        {
+            //transform.localScale *= 0;
+            door.transform.localScale *= 0;
+            key.SetActive(false);
+        }
     }
 }

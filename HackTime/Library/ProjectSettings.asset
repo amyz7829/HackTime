@@ -463,6 +463,8 @@ PlayerSettings:
   cloudServicesEnabled:
     Build: 1
     Collab: 1
+    ErrorHub: 0
+    Hub: 0
     UNet: 1
   cloudProjectId: 9c59cdb7-43b9-4a8b-94f3-53adb3b883e3
   projectName: HackTime
