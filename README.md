@@ -11,6 +11,9 @@ Figuring out exactly how the mechanic worked in practice ended up being more cha
 ## Accomplishments that we're proud of
 None of us had really used Unity before, so learning the game engine and getting a functional game up in the given amount of time is something we feel quite proud of. 
 ## What we learned
-
+How to use Unity
 ## What's next for HackTime
 Creating more levels, and fleshing it out as a game. It's quite barebones, with few custom assets, and the puzzles should increase in difficulty and have more variety. Giving it more backstory and narration could be good next steps to really make the world come alive. 
+
+## How to Play
+Just download Demo.exe and play away!
